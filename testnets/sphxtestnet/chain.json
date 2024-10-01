@@ -1,0 +1,92 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "sphinxtestnet",
+  "status": "live",
+  "network_type": "testnet",
+  "pretty_name": "Sphinx Testnet",
+  "chain_type": "cosmos",
+  "chain_id": "sphx-testnet",
+  "bech32_prefix": "sphx",
+  "daemon_name": "sphxd",
+  "node_home": "$HOME/.sphx",
+  "key_algos": [
+    "secp256k1"
+  ],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "uusdc",
+        "fixed_min_gas_price": 0
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": [
+      {
+        "denom": "uusdc"
+      }
+    ]
+  },
+  "codebase": {
+    "git_repo": "https://github.com/SphinxNetwork/sphinx",
+    "recommended_version": "v0.0.1",
+    "compatible_versions": [
+      "v0.0.1"
+    ],
+    "cosmos_sdk_version": "0.50.9",
+    "consensus": {
+      "type": "cometbft",
+      "version": "0.38.10"
+    },
+    "cosmwasm_version": "0.50.0",
+    "cosmwasm_enabled": true,
+    "ibc_go_version": "8.3.1",
+    "genesis": {
+      "genesis_url": "https://raw.githubusercontent.com/SphinxNetwork/sphinx/main/testnet/genesis.json"
+    },
+    "versions": [
+      {
+        "name": "v0.0.1",
+        "recommended_version": "v0.0.1",
+        "compatible_versions": [
+          "v0.0.1"
+        ],
+        "cosmos_sdk_version": "0.50.9",
+        "consensus": {
+          "type": "cometbft",
+          "version": "0.38.10"
+        },
+        "cosmwasm_version": "0.50.0",
+        "cosmwasm_enabled": true,
+        "ibc_go_version": "8.3.1"
+      }
+    ]
+  },
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc1.sphx.dev",
+        "provider": "Sphinx"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://rpc1.sphx.dev/rest",
+        "provider": "Sphinx"
+      }
+    ],
+    "grpc": []
+  },
+  "explorers": [],
+  "logo_URIs": {
+    "png": "https://avatars.githubusercontent.com/u/134250347"
+  },
+  "keywords": [
+    "testnet"
+  ]
+}

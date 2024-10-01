@@ -1,0 +1,33 @@
+{
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "sphx-testnet",
+  "assets": [
+    {
+      "description": "USDC is a fully collateralized US dollar stablecoin used as the primary means of value exchange and storage on the Sphinx Network.",
+      "denom_units": [
+        {
+          "denom": "uusdc",
+          "exponent": 0
+        },
+        {
+          "denom": "usdc",
+          "exponent": 6
+        }
+      ],
+      "base": "uusdc",
+      "name": "USD Coin",
+      "display": "usdc",
+      "symbol": "USDC",
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/SphinxNetwork/sphinx/main/assets/usdc.png",
+        "svg": "https://raw.githubusercontent.com/SphinxNetwork/sphinx/main/assets/usdc.svg"
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/SphinxNetwork/sphinx/main/assets/usdc.png",
+          "svg": "https://raw.githubusercontent.com/SphinxNetwork/sphinx/main/assets/usdc.svg"
+        }
+      ]
+    }
+  ]
+}
